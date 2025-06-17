@@ -30,5 +30,5 @@ Always focus on one task per prompt. Avoid combining multiple unrelated instruct
 
 # link:
 [《GPT提示词大全》进阶版](https://fcnyytadf5ju.feishu.cn/wiki/NJ0awapB7icqXzkyfqfcL2pBnVd)
-
+[How to use ChatGPT with external tools](https://mitsloan.mit.edu/ideas-made-to-matter/how-to-use-chatgpt-external-tools)
 Continuously updating...
