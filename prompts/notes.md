@@ -199,6 +199,6 @@ The correct answer is mythology.
 [《GPT提示词大全》进阶版](https://fcnyytadf5ju.feishu.cn/wiki/NJ0awapB7icqXzkyfqfcL2pBnVd)
 [How to use ChatGPT with external tools](https://mitsloan.mit.edu/ideas-made-to-matter/how-to-use-chatgpt-external-tools)
 [open AI-Text generation](https://platform.openai.com/docs/guides/text?api-mode=responses)
-Continuously updating...
 [Gemini-Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies)
 [Gemini-Prompt Galley](https://ai.google.dev/gemini-api/prompts)
+Continuously updating...
