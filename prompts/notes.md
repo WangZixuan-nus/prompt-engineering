@@ -80,47 +80,60 @@ topP 参数决定模型如何选择输出 token。模型会按照概率从高到
 **使用不同的措辞：**
 在提示词中使用不同的单词或表达方式，往往会让模型产生不同的回答，即使它们表达的是同一个意思。如果提示词没有得到预期的结果，可以尝试重新表述。
 
-* **版本 1：** How do I bake a pie?（我该如何烤一个派？）
-* **版本 2：** Suggest a recipe for a pie.（推荐一个派的食谱。）
-* **版本 3：** What's a good pie recipe?（什么是一个好的派食谱？）
-
----
+```
+Version1: How do I bake a pie?（我该如何烤一个派？）
+Version2: Suggest a recipe for a pie.（推荐一个派的食谱。）
+Version3: What's a good pie recipe?（什么是一个好的派食谱？）
+```
 
 **切换到类比任务：**
 如果模型无法按照你要求的方式完成任务，可以尝试给它一个类似的任务，从而实现相同的目标。
 
 例如，这个提示词让模型使用预设类别对一本书进行分类：
 
-**提示词：**
+Prompt:
+```
 Which category does *The Odyssey* belong to:
 
 * thriller
 * sci-fi
 * mythology
 * biography
+```
 
-**响应：**
-*The Odyssey* 属于 **mythology（神话）** 类别。
+response:
+```
+The Odyssey belongs to the category of **mythology**.
 
-**原因：**
+Here's why:
 
-* **Mythology：** *The Odyssey* 讲述了希腊神话中的英雄奥德修斯在特洛伊战争后的归乡之旅，故事中包含了神祇、怪物和超自然事件，这些都是希腊神话的典型元素。
+* **Mythology:** The Odyssey tells the story of Odysseus, a hero from Greek mythology, and his
+journey home after the Trojan War. It features gods, monsters, and supernatural events common to
+Greek mythology.
+.....
+```
 
 响应是正确的，但模型没有严格按照选项范围作答。你希望模型只从选项中回答，而不是输出完整的句子。在这种情况下，可以把提示词改写为多选题形式，并明确要求模型选择一个选项。
-
-**提示词：**
-Multiple choice problem: Which of the following options describes the book *The Odyssey*?
+prompt:
+```
+Multiple choice problem: Which of the following options describes the book The Odyssey?
 Options:
 
-* thriller
-* sci-fi
-* mythology
-* biography
 
-**响应：**
+
+thriller
+
+sci-fi
+
+mythology
+
+biography
+```
+
+response:
+```
 The correct answer is mythology.
-
----
+```
 
 **调整提示词内容顺序：**
 有时提示词的内容顺序会影响响应。可以尝试更换顺序，观察结果。
@@ -129,7 +142,6 @@ The correct answer is mythology.
 * **版本 2：** \[input] → \[examples] → \[context]
 * **版本 3：** \[examples] → \[input] → \[context]
 
----
 
 7. 对抗性测试
 
